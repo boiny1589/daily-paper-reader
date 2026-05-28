@@ -25,3 +25,40 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: robotics
+      description: 请帮我查找关于具身智能、机器人控制、导航以及结合了世界模型（World Models）进行轨迹预测或决策的相关论文。
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: vla
+          keyword_cn: ''
+          query: v
+      intent_queries:
+        - query: manipulation
+          query_cn: 机器人操作
+          enabled: true
+          source: manual
+          note: ''
+        - query: locomotion
+          query_cn: 机器人运控
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-05-28T14:13:32.218Z'
+source_backends:
+  arxiv:
+    papers_table: arxiv_papers
+    use_vector_rpc: true
+    vector_rpc: match_arxiv_papers
+    vector_rpc_exact: match_arxiv_papers_exact
+    use_bm25_rpc: true
+    bm25_rpc: match_arxiv_papers_bm25
+    sync_table: arxiv_sync_status
+    sync_success_value: success
+    schema: public
+    kind: supabase
+    enabled: true
+    url: https://lyucdwgefyfbmaiopjbk.supabase.co
+    anon_key: sb_publishable_lX-oi64Uxyd7SIVv3_w2Uw_MTOojeKq
