@@ -1,0 +1,1159 @@
+{
+  "mode": "standard",
+  "generated_at": "2026-05-28T14:18:45.799120+00:00",
+  "stats": {
+    "mode": "standard",
+    "tag_count": 1,
+    "deep_divecandidates": 44,
+    "deep_cap": 6,
+    "deep_selected": 18,
+    "quick_candidates": 39,
+    "quick_skim_target": 11,
+    "quick_selected": 11
+  },
+  "deep_dive": [
+    {
+      "id": "2605.19678v1",
+      "source": "arxiv",
+      "title": "RoVLA: Multi-Consistency Constraints for Robust Vision-Language-Action Models",
+      "abstract": "Vision-Language-Action (VLA) models have shown strong performance on embodied manipulation, yet they remain brittle under visual observation changes, paraphrased language instructions, and compounded perturbations. This limitation suggests that existing methods still rely heavily on shallow correlations in the training distribution, rather than learning stable couplings among task semantics, environment states, and action generation. Although recent efforts improve robustness through larger-scale training, post-training adaptation, or enhanced predictive modeling, they rarely enforce invariance-oriented consistency within the end-to-end policy itself. To address this issue, we propose RoVLA, a robust vision-language-action framework with multi-consistency constraints. RoVLA enforces consistency under three complementary transformations: instruction semantics, trajectory evolution, and observation perturbation. Specifically, Instructional Consistency (IC) promotes stable grounding under semantically equivalent instruction rewrites, Evolutionary Consistency (EC) preserves coherent action intent throughout the generation process, and Observational Consistency (OC) improves robustness to visual and proprioceptive perturbations by enforcing consistent predictions before and after targeted disturbances. By explicitly modeling these invariances during training, RoVLA reduces reliance on superficial correlations and improves robustness and generalization. Experiments on LIBERO-Plus, RoboTwin 2.0, and real-world manipulation tasks show that RoVLA consistently outperforms strong baseline methods and exhibits superior robustness under diverse task and observation shifts. These results demonstrate the effectiveness of multi-consistency learning for robust embodied control. Codes will be available at https://github.com/HCPLab-SYSU/RoVLA.",
+      "authors": [
+        "Jingzhou Luo",
+        "Yifan Wen",
+        "Yongjie Bai",
+        "Xinshuai Song",
+        "Yang Liu",
+        "Liang Lin"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-19T11:10:20+00:00",
+      "link": "https://arxiv.org/pdf/2605.19678v1",
+      "tags": [
+        "keyword:robotics",
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "robust VLA models with multi-consistency constraints for manipulation",
+      "llm_evidence_cn": "提出多一致性约束增强VLA模型鲁棒性，用于操作任务",
+      "llm_evidence": "提出多一致性约束增强VLA模型鲁棒性，用于操作任务",
+      "canonical_evidence": "提出多一致性约束增强VLA模型鲁棒性，用于操作任务",
+      "llm_tldr_en": "RoVLA enforces invariance-oriented consistency within end-to-end policy to improve robustness against visual and language perturbations in embodied manipulation.",
+      "llm_tldr_cn": "现有的视觉-语言-动作（VLA）模型在操作中易受视觉变化和语言指令改写的影响，原因是依赖训练分布中的浅层相关性。本文提出RoVLA框架，通过多一致性约束在端到端策略中强制不变性，稳定了语义、状态与动作之间的耦合。实验证明RoVLA显著提升了在多种扰动下的鲁棒性。",
+      "llm_tldr": "现有的视觉-语言-动作（VLA）模型在操作中易受视觉变化和语言指令改写的影响，原因是依赖训练分布中的浅层相关性。本文提出RoVLA框架，通过多一致性约束在端到端策略中强制不变性，稳定了语义、状态与动作之间的耦合。实验证明RoVLA显著提升了在多种扰动下的鲁棒性。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "v",
+      "matched_requirement_id": "req-1",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.19981v1",
+      "source": "arxiv",
+      "title": "CEER: Compliant End-Effector and Root Control as a Unified Interface for Hierarchical Humanoid Loco-Manipulation",
+      "abstract": "Humanoid robots have achieved impressive locomotion performance, yet contact-rich and long-horizon manipulation remains a major bottleneck. Manipulation is inherently contact-rich and demands compliant whole-body control for stable interaction, while its diversity and long-horizon nature favor modular, planner-compatible interfaces over joint-space tracking.   We propose CEER, a compliant end-effector-root (EE-root) control abstraction for modular humanoid loco-manipulation within a hierarchical planning framework. CEER enables compliance-aware whole-body control in an interpretable task space defined by root motion commands and end-effector pose targets, and supports plug-and-play integration with heterogeneous high-level planners. A teacher-student framework is adopted to distill a general motion-tracking controller into a low-level policy that consumes only EE-root commands.   We further construct a hierarchical system that integrates heterogeneous planners and task modules through the EE-root interface, enabling diverse manipulation tasks without retraining the underlying whole-body policy. Experiments in simulation and on hardware demonstrate 3.3 cm end-effector tracking accuracy with substantially reduced jerk compared to baselines, stable contact-rich manipulation under teleoperation, and up to 70% success in simulated single-object loco-manipulation tasks within a room-scale environment. These results indicate that compliant EE-root control provides a practical abstraction for humanoid loco-manipulation, enabling modular and scalable integration of diverse skills.",
+      "authors": [
+        "Xinyuan Luo",
+        "Xingrui Chen",
+        "Xunjian Yin",
+        "Hongxuan Wu",
+        "Boxi Xia",
+        "Zhuoqun Chen",
+        "Jinzhou Li",
+        "Boyuan Chen",
+        "Xianyi Cheng"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-19T15:23:40+00:00",
+      "link": "https://arxiv.org/pdf/2605.19981v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "hierarchical humanoid loco-manipulation with compliant EE-root control",
+      "llm_evidence_cn": "层次化人形移动操作，柔顺末端-根部控制抽象",
+      "llm_evidence": "层次化人形移动操作，柔顺末端-根部控制抽象",
+      "canonical_evidence": "层次化人形移动操作，柔顺末端-根部控制抽象",
+      "llm_tldr_en": "CEER proposes a compliant end-effector-root control abstraction for modular humanoid loco-manipulation within a hierarchical planning framework, enabling compliance-aware whole-body control.",
+      "llm_tldr_cn": "人形机器人在接触丰富的长时程操作中面临瓶颈。本文提出CEER，一种柔顺的末端-根部控制抽象，在层次化规划框架内实现模块化人形移动操作。CEER通过可解释的任务空间控制实现全身柔顺，并支持与异构规划器的即插即用集成。实验展示了其在多种操作任务中的有效性。",
+      "llm_tldr": "人形机器人在接触丰富的长时程操作中面临瓶颈。本文提出CEER，一种柔顺的末端-根部控制抽象，在层次化规划框架内实现模块化人形移动操作。CEER通过可解释的任务空间控制实现全身柔顺，并支持与异构规划器的即插即用集成。实验展示了其在多种操作任务中的有效性。",
+      "llm_tags": [
+        "query:robotics:composite"
+      ],
+      "matched_query_tag": "query:robotics:composite",
+      "matched_query_text": "Papers central to 请帮我查找关于具身智能、机器人控制、导航以及结合了世界模型（World Models）进行轨迹预测或决策的相关论文。, especially work that connects or combines: v; manipulation; locomotion.",
+      "matched_requirement_id": "req-composite-robotics",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.20752v1",
+      "source": "arxiv",
+      "title": "GaussianDream: A Feed-Forward 3D Gaussian World Model for Robotic Manipulation",
+      "abstract": "Vision-language-action (VLA) policies have advanced language-conditioned robotic manipulation by transferring semantic priors from pretrained vision-language models to action generation. Yet, standard action-imitation training often provides limited explicit supervision for 3D geometry, dense visual structure, and short-horizon environment evolution, which are critical for physically precise manipulation. We introduce \\textbf{GaussianDream}, a feed-forward 3D Gaussian world-model plug-in that turns robot trajectories into structured spatial-temporal supervision. The key idea is to couple current Gaussian reconstruction with horizon-conditioned future Gaussian prediction during training, forcing a compact spatio-temporal prefix to be decodable into renderable 3D Gaussian states. This enables dense RGB rendering, depth, and pseudo 3D scene-flow supervision without requiring test-time Gaussian decoding. At inference, GaussianDream discards all auxiliary decoding heads and retains only the learned prefix to condition action generation, avoiding rendering, video rollout, or additional planning during closed-loop control. Experiments on LIBERO, RoboCasa Human-50, and real-robot tasks demonstrate strong and highly competitive performance, achieving \\textbf{98.4\\%} average success on LIBERO, \\textbf{52.6\\%} on RoboCasa Human-50, and \\textbf{50.0\\%} in real-world evaluation.",
+      "authors": [
+        "Zijian Zhang",
+        "Yuqing Jiang",
+        "Qian Cheng",
+        "Si Liu",
+        "Ding Zhao",
+        "Ping Luo",
+        "Weitao Zhou",
+        "Haibao Yu"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-20T05:51:30+00:00",
+      "link": "https://arxiv.org/pdf/2605.20752v1",
+      "tags": [
+        "keyword:robotics",
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "feed-forward 3D Gaussian world model for manipulation with traj prediction",
+      "llm_evidence_cn": "前馈式3D高斯世界模型用于操作，结合轨迹预测",
+      "llm_evidence": "前馈式3D高斯世界模型用于操作，结合轨迹预测",
+      "canonical_evidence": "前馈式3D高斯世界模型用于操作，结合轨迹预测",
+      "llm_tldr_en": "GaussianDream introduces a feed-forward 3D Gaussian world-model plug-in that couples current reconstruction with future prediction to supervise spatial-temporal structure for manipulation.",
+      "llm_tldr_cn": "标准动作模仿训练缺乏对3D几何和短时环境演变的显式监督，限制了精细操作。本文提出GaussianDream，一个前馈式3D高斯世界模型插件，将机器人轨迹转化为结构化时空监督，通过耦合当前高斯重建与未来预测来强制紧凑的时空前缀。实验证明该方法提升了物理精度和操作性能。",
+      "llm_tldr": "标准动作模仿训练缺乏对3D几何和短时环境演变的显式监督，限制了精细操作。本文提出GaussianDream，一个前馈式3D高斯世界模型插件，将机器人轨迹转化为结构化时空监督，通过耦合当前高斯重建与未来预测来强制紧凑的时空前缀。实验证明该方法提升了物理精度和操作性能。",
+      "llm_tags": [
+        "query:robotics:composite"
+      ],
+      "matched_query_tag": "query:robotics:composite",
+      "matched_query_text": "Papers central to 请帮我查找关于具身智能、机器人控制、导航以及结合了世界模型（World Models）进行轨迹预测或决策的相关论文。, especially work that connects or combines: v; manipulation; locomotion.",
+      "matched_requirement_id": "req-composite-robotics",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.20894v1",
+      "source": "arxiv",
+      "title": "Mobile UMI: Cross-View Diffusion Policy with Decoupled Kinematics for Mobile Manipulation",
+      "abstract": "Mobile imitation learning on portable demonstration interfaces faces two coupled bottlenecks: locomotion-contaminated action labels and inference-induced execution latency on a continuously moving base. Recent wrist-mounted interfaces lower the cost of tabletop data collection, yet a single wrist view does not capture the global context required for base navigation. Adding a body-mounted camera entangles human walking with hand motion. Meanwhile, generative policies introduce hundreds of milliseconds of inference latency, during which the base advances past predicted waypoints, forcing backward corrections at action splices. This paper presents Mobile UMI, a hardware-free demonstration framework that addresses both gaps through three components. First, a dual-camera capture system records chest-centric global context and wrist-centric local interaction without any robot present. Second, a one-shot ChArUco-based spatial anchor unifies the chest and hand visual-inertial frames; the hand pose is then re-expressed relative to the chest to extract decoupled SE(3) manipulation and SE(2) base trajectories. Third, an asynchronous receding-horizon executor performs online state matching: each generated action chunk is realigned with the current physical pose so that expired waypoints are discarded before execution. The full system is evaluated on four long-horizon household tasks, achieving an average success rate of 83.8% over 100 trials per task. Controlled comparisons against ACT and Diffusion Policy show that the chest-relative label alone closes much of the gap; online state matching closes the remainder. These results indicate that, for mobile imitation learning under the tested conditions, explicit kinematic factorization combined with state-level latency alignment provides an effective solution without requiring architectural changes to the underlying policy class.",
+      "authors": [
+        "Haoran Huang",
+        "Haonan Dong",
+        "Huixu Dong"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-20T08:33:53+00:00",
+      "link": "https://arxiv.org/pdf/2605.20894v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "mobile manipulation with cross-view diffusion policy and decoupled kinematics",
+      "llm_evidence_cn": "移动操作结合跨视角扩散策略与解耦运动学",
+      "llm_evidence": "移动操作结合跨视角扩散策略与解耦运动学",
+      "canonical_evidence": "移动操作结合跨视角扩散策略与解耦运动学",
+      "llm_tldr_en": "Mobile UMI addresses locomotion-contaminated action labels and inference latency in mobile manipulation using cross-view diffusion policy and decoupled kinematics.",
+      "llm_tldr_cn": "移动操作面临基座运动污染动作标签和推理延迟两大瓶颈。本文提出Mobile UMI，通过跨视角扩散策略和解耦运动学，分离基座运动与手部动作，并利用扩散模型并行推理减少延迟。实验在多个移动操作任务上证明了有效性。",
+      "llm_tldr": "移动操作面临基座运动污染动作标签和推理延迟两大瓶颈。本文提出Mobile UMI，通过跨视角扩散策略和解耦运动学，分离基座运动与手部动作，并利用扩散模型并行推理减少延迟。实验在多个移动操作任务上证明了有效性。",
+      "llm_tags": [
+        "query:robotics:composite"
+      ],
+      "matched_query_tag": "query:robotics:composite",
+      "matched_query_text": "Papers central to 请帮我查找关于具身智能、机器人控制、导航以及结合了世界模型（World Models）进行轨迹预测或决策的相关论文。, especially work that connects or combines: v; manipulation; locomotion.",
+      "matched_requirement_id": "req-composite-robotics",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.21133v1",
+      "source": "arxiv",
+      "title": "Humanoid Whole-Body Manipulation via Active Spatial Brain and Generalizable Action Cerebellum",
+      "abstract": "In this paper, we explore spatial-aware humanoid whole-body manipulation task. Compared with tabletop settings, this task poses two key challenges: 1) Spatial understanding is challenging in complex 3D environments with diverse spatial relations. 2) Action generation is difficult to generalize, as limited and costly real-robot data restricts data-driven models generalization. To address these challenges, we propose a generalizable humanoid loco-manipulation framework that leverages the spatial perception and action generation capabilities of multi-agent large models. Specifically, our framework includes two components: Active Spatial Brain for active spatial perception and decision-making, and Generalizable Action Cerebellum for executable robot action generation. The first component actively perceives the spatial scene and makes decisions on task planning and subtask decomposition. The second component generate executable robot actions based on the decisions made by the first module without needs of task-specific real robot data. To benchmark our framework, we design a set of spatial manipulation tasks from two perspectives: evaluating spatial perception and understanding, and assessing real-robot task performance. The results demonstrate strong performance on both aspects across diverse tasks and environments.",
+      "authors": [
+        "Zhizhao Liang",
+        "Yi-Lin Wei",
+        "Xuhang Chen",
+        "Mu Lin",
+        "Yi-Xiang He",
+        "Zhexi Luo",
+        "Jun-Hui Liu",
+        "Kun-Yu Lin",
+        "Wei-Shi Zheng"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-20T13:05:31+00:00",
+      "link": "https://arxiv.org/pdf/2605.21133v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "humanoid whole-body loco-manipulation with spatial perception",
+      "llm_evidence_cn": "人形全身移动操作，结合空间感知与动作生成",
+      "llm_evidence": "人形全身移动操作，结合空间感知与动作生成",
+      "canonical_evidence": "人形全身移动操作，结合空间感知与动作生成",
+      "llm_tldr_en": "Proposes a humanoid loco-manipulation framework with Active Spatial Brain for perception/decision and Generalizable Action Cerebellum for action generation, leveraging multi-agent large models.",
+      "llm_tldr_cn": "人形全身操作面临复杂空间理解和动作泛化难题。本文提出一个通用人形移动操作框架，包含主动空间大脑（空间感知与决策）和通用动作小脑（动作生成），利用多智能体大模型。实验表明该方法在多个空间操作任务上实现了良好泛化。",
+      "llm_tldr": "人形全身操作面临复杂空间理解和动作泛化难题。本文提出一个通用人形移动操作框架，包含主动空间大脑（空间感知与决策）和通用动作小脑（动作生成），利用多智能体大模型。实验表明该方法在多个空间操作任务上实现了良好泛化。",
+      "llm_tags": [
+        "query:robotics:composite"
+      ],
+      "matched_query_tag": "query:robotics:composite",
+      "matched_query_text": "Papers central to 请帮我查找关于具身智能、机器人控制、导航以及结合了世界模型（World Models）进行轨迹预测或决策的相关论文。, especially work that connects or combines: v; manipulation; locomotion.",
+      "matched_requirement_id": "req-composite-robotics",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.21811v1",
+      "source": "arxiv",
+      "title": "Safe and Steerable Geometric Motion Policies for Robotic Dexterous Manipulation",
+      "abstract": "Robotic dexterous manipulation requires continuously reconciling objectives and constraints defined on heterogeneous geometric spaces: a robot controlled on a $\\mathbb{R}^7$ configuration manifold may need to track end effector poses on $\\mathrm{SE}(3)$ while satisfying obstacle avoidance margins in $\\mathbb{R}$. We present Safe Pullback Bundle Dynamical Systems (SafePBDS), a geometrically consistent framework that computes optimal, certifiably safe configuration manifold accelerations from objectives and safety requirements on arbitrary task manifolds. SafePBDS builds on prior work that combines predefined task manifold dynamical systems to produce autonomous motion. Its first innovation is a pullback control barrier function construction, which converts task manifold safety conditions into linear constraints on configuration manifold accelerations. The second innovation is a task manifold action interface that allows a high-level policy to inject low dimensional residual motions; zero input recovers the autonomous behavior, while safety is preserved under arbitrary inputs. This lets high-level policies efficiently steer exploration while leaving precise motion to the autonomous behavior. We validate SafePBDS in simulation and on a 23-DOF Franka Panda-Allegro Hand platform. On dexterous grasping, SafePBDS achieves a $92.5\\%$ success rate across 20 household objects and 120 trials. Using the action interface, the method can exclude any one of the four fingers during grasping via a one-dimensional action, achieving $94.4\\%$ 3-finger grasp success across 3 objects and 36 trials. The efficient planning and safety guarantee of SafePBDS also enables the first model-based, fully actuated palm-down in-hand reorientation, exceeding $360^\\circ$ of yaw rotation in both directions under varying object weight and wrist motion. Demo video and details: https://tml.stanford.edu/safe-pbds",
+      "authors": [
+        "Albert Wu",
+        "Riccardo Bonalli",
+        "Thomas Lew",
+        "C. Karen Liu"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-20T23:16:01+00:00",
+      "link": "https://arxiv.org/pdf/2605.21811v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "dexterous manipulation geometric motion policies",
+      "llm_evidence_cn": "灵巧操作几何运动策略",
+      "llm_evidence": "灵巧操作几何运动策略",
+      "canonical_evidence": "灵巧操作几何运动策略",
+      "llm_tldr_en": "Presents SafePBDS, a geometrically consistent framework for computing safe configuration manifold accelerations from task manifold objectives, using pullback control barrier functions for dexterous manipulation.",
+      "llm_tldr_cn": "灵巧操作需协调多种几何约束。本文提出SafePBDS框架，通过拉回控制障碍函数构造，从任意任务流形上的目标和安全要求，计算出配置流形上最优且可证明安全的加速度。该方法结合了先前任务流形动力学，实现了自主运动规划，在灵巧操作任务中保证了安全。",
+      "llm_tldr": "灵巧操作需协调多种几何约束。本文提出SafePBDS框架，通过拉回控制障碍函数构造，从任意任务流形上的目标和安全要求，计算出配置流形上最优且可证明安全的加速度。该方法结合了先前任务流形动力学，实现了自主运动规划，在灵巧操作任务中保证了安全。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "manipulation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.23568v1",
+      "source": "arxiv",
+      "title": "TactileReflex: Noise-Statistics-Driven Vision-Tactile Reflex Control for Force-Sensitive Manipulation",
+      "abstract": "Manipulating fragile deformable containers, such as disposable plastic cups filled with liquid, demands real-time grip-force adaptation within an extremely narrow force margin: insufficient force causes slip, while excessive force irreversibly deforms the thin wall. Existing approaches struggle to achieve such force-sensitive manipulation tasks. We propose a noise-statistics-based calibration-driven reflex control paradigm with vision-based tactile sensing: by analyzing the sensor's intrinsic noise characteristics (via a brief static-hold-and-unload protocol), we directly derive all controller thresholds, eliminating external force calibration, trial-and-error manual tuning, or material-specific physical models. Instantiating this paradigm, we present TactileReflex, a three-channel closed-loop controller that extracts three image-level proxies, shear intensity ($S_y$), contact intensity ($F_n$), and center of pressure ($C$), from dual visuo-tactile sensors and drives prioritized reflex channels at ~12 Hz for slip suppression, weight-adaptive release, and force protection. Each channel closes the loop directly on its proxy via noise-derived thresholds. Ablation demonstrates that only the full three-channel system is able to prevent irreversible container deformation (5/5 success vs. at most 1/5 for partial configurations). In a dynamic pouring task, fixed-effort baselines fail in all 10 attempts due to pose drift, while TactileReflex achieves 9/10 success across two water volumes. As a self-contained and interpretable controller, TactileReflex can serve as a plug-and-play safety layer beneath high-level manipulation pipelines, including haptic-free VR teleoperation and vision-language-action (VLA) policies.",
+      "authors": [
+        "Ziyan Feng",
+        "Yulong Fu",
+        "Zheng Li",
+        "Yuxin He",
+        "Jieji Ren",
+        "Lujia Wang",
+        "Jinni Zhou",
+        "Yudong Zhong",
+        "Qiang Nie"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "published": "2026-05-22T12:35:28+00:00",
+      "link": "https://arxiv.org/pdf/2605.23568v1",
+      "tags": [
+        "keyword:robotics",
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "force-sensitive manipulation using vision-tactile reflex",
+      "llm_evidence_cn": "基于视觉-触觉反射的力敏感操作",
+      "llm_evidence": "基于视觉-触觉反射的力敏感操作",
+      "canonical_evidence": "基于视觉-触觉反射的力敏感操作",
+      "llm_tldr_en": "TactileReflex uses noise-statistics-driven calibration to achieve real-time grip-force adaptation for manipulating fragile deformable containers, eliminating external calibration and manual tuning. The method enables precise force control with vision-based tactile sensing.",
+      "llm_tldr_cn": "针对易碎柔性容器（如装有液体的塑料杯）的操作难题，现有方法难以在极窄的力裕度内实时调整抓力。本文提出TactileReflex，基于噪声统计的标定驱动反射控制范式，利用视觉触觉传感分析传感器固有噪声特性，直接导出所有控制器阈值，无需外部力标定或手动调参。实验证明该方法在力敏感操作任务中表现出高精度和鲁棒性，为精密操作提供了新思路。",
+      "llm_tldr": "针对易碎柔性容器（如装有液体的塑料杯）的操作难题，现有方法难以在极窄的力裕度内实时调整抓力。本文提出TactileReflex，基于噪声统计的标定驱动反射控制范式，利用视觉触觉传感分析传感器固有噪声特性，直接导出所有控制器阈值，无需外部力标定或手动调参。实验证明该方法在力敏感操作任务中表现出高精度和鲁棒性，为精密操作提供了新思路。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "manipulation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.23847v1",
+      "source": "arxiv",
+      "title": "Instrumentation for Imitation Learning: Enhancing Training Datasets for Clothes Hanger Insertion",
+      "abstract": "Large behaviour models have transformed the field of robotic manipulation, but prohibitive data requirements have thus far prevented a revolution similar to vision language models. We believe that instrumentation, i.e. sensor integration in objects, can provide invaluable state information and enable efficient learning for robotic manipulation. In this paper, we present instrumented imitation learning of clothes hanger insertion. Using 180 teleoperated demonstrations, we train diffusion policies with and without access to instrumentation data. Results show that policies leveraging instrumentation outperform vision-only counterparts by 14-25 %pt and exhibit greater task awareness. Crucially, a black-box imitation learning policy learns to prioritise instrumentation signals without explicit guidance. In addition, enhancing the teleoperation dataset with rollouts from an instrumented expert policy, enables a vision-only student policy to achieve performance comparable to the instrumented expert, thereby surpassing the original vision-only policy. These findings establish instrumentation as a promising strategy to enhance imitation learning for robotic manipulation. Datasets are available on Zenodo.",
+      "authors": [
+        "Remko Proesmans",
+        "Thomas Lips",
+        "Francis wyffels"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-22T16:59:55+00:00",
+      "link": "https://arxiv.org/pdf/2605.23847v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "instrumented imitation learning for robotic manipulation",
+      "llm_evidence_cn": "通过传感器集成改进机器人操纵的模仿学习",
+      "llm_evidence": "通过传感器集成改进机器人操纵的模仿学习",
+      "canonical_evidence": "通过传感器集成改进机器人操纵的模仿学习",
+      "llm_tldr_en": "Instrumented imitation learning with sensor integration improves clothes hanger insertion policy performance by 14-25% point over vision-only, demonstrating the value of instrumentation data in robotic manipulation tasks.",
+      "llm_tldr_cn": "针对机器人操纵中数据效率低的问题，本文提出在物体中集成传感器（即仪器化）来提供状态信息，并用于模仿学习。以衣架插入任务为例，使用180次遥操作演示训练扩散策略，加入仪器数据后策略性能比纯视觉方法提升14-25个百分点，且任务感知能力更强。这项工作表明仪器化能有效降低操纵学习的数据需求，为机器人操纵的数据效率提升提供了新思路。",
+      "llm_tldr": "针对机器人操纵中数据效率低的问题，本文提出在物体中集成传感器（即仪器化）来提供状态信息，并用于模仿学习。以衣架插入任务为例，使用180次遥操作演示训练扩散策略，加入仪器数据后策略性能比纯视觉方法提升14-25个百分点，且任务感知能力更强。这项工作表明仪器化能有效降低操纵学习的数据需求，为机器人操纵的数据效率提升提供了新思路。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "manipulation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.24592v1",
+      "source": "arxiv",
+      "title": "MuGen: Multi-Skill Generative Locomotion Controller for Humanoid Robots",
+      "abstract": "This paper presents MuGen, a data-driven framework for learning and deploying multi-skill locomotion on humanoid robots. MuGen enables a robot to perform expressive motions like humans under the guidance of example motion sequences. To achieve this, we employ vector-quantized autoencoders (VQ-VAEs) trained with model-based reinforcement learning, resulting in a generative representation of locomotion that captures key patterns of human motion from hours of heterogeneous human performance data. We employ a teacher-student learning framework and develop a new policy distillation strategy to enable a deployable student policy learning this efficient latent representation. This policy allows the robot to track and mimic unseen human motions and further enables the robot to reuse the learned latent space for other tasks. We demonstrate the effectiveness of our framework through a diverse set of motions and accurate execution.",
+      "authors": [
+        "Yusen Feng",
+        "Xiang Wang",
+        "Heyuan Yao",
+        "Zixi Kang",
+        "Xinyu Huo",
+        "Boyang Yu",
+        "Pengyun Qiu",
+        "Ruijie Zhao",
+        "Baoquan Chen",
+        "Libin Liu"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-23T14:06:06+00:00",
+      "link": "https://arxiv.org/pdf/2605.24592v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "multi-skill locomotion control for humanoid robots",
+      "llm_evidence_cn": "人形机器人多技能运动控制",
+      "llm_evidence": "人形机器人多技能运动控制",
+      "canonical_evidence": "人形机器人多技能运动控制",
+      "llm_tldr_en": "MuGen is a data-driven framework for learning multi-skill locomotion on humanoid robots using VQ-VAEs and model-based RL. It enables expressive motion tracking and imitation of unseen human motions via teacher-student distillation.",
+      "llm_tldr_cn": "人形机器人运动技能学习面临多样性和泛化挑战。本文提出MuGen，结合矢量量化自编码器和基于模型的强化学习，从异构人类运动数据中学习运动生成表示。通过教师-学生策略蒸馏，学生策略可在真实机器人上实时跟踪和新颖运动模仿。实验表明其在多种运动技能上表现优异，推动了人形机器人运动控制的发展。",
+      "llm_tldr": "人形机器人运动技能学习面临多样性和泛化挑战。本文提出MuGen，结合矢量量化自编码器和基于模型的强化学习，从异构人类运动数据中学习运动生成表示。通过教师-学生策略蒸馏，学生策略可在真实机器人上实时跟踪和新颖运动模仿。实验表明其在多种运动技能上表现优异，推动了人形机器人运动控制的发展。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "locomotion",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.24643v1",
+      "source": "arxiv",
+      "title": "Towards Low-Gravity Planetary Exploration using Reinforcement Learning for Walking, Jumping, and In-flight Attitude Control",
+      "abstract": "This paper presents reinforcement learning (RL) policies for dynamic quadrupedal locomotion in planetary exploration scenarios. Building on a taskoptimized quadruped with a 5-bar leg design, we develop RL policies for walking, vertical jumping, forward jumping, and in-flight attitude control, explicitly tailored to the reduced gravity on Mars. These policies jointly enable such robots to overcome obstacles larger than themselves through coordinated jumping and precise in-flight reorientation for safe landings. We demonstrate Sim2Real transfer of the attitude control policy on the Olympus quadruped through single-axis reorientation tests, while all locomotion policies are validated in simulation. A complete Mars exploration mission scenario demonstrates coordinated policy deployment across challenging terrain. Experimental results show 90° attitude reorientation in 2.6 seconds, with simulations demonstrating 3.1 meter vertical jumps and 3.9 meter forward jumps under Martian gravity conditions. - Supplementary video: https://www.youtube.com/watch?v=qlSJ3P87A4A",
+      "authors": [
+        "Jørgen Anker Olsen",
+        "Kostas Alexis"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "published": "2026-05-23T16:20:23+00:00",
+      "link": "https://arxiv.org/pdf/2605.24643v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "quadrupedal locomotion walking jumping attitude control",
+      "llm_evidence_cn": "四足行走跳跃与姿态控制",
+      "llm_evidence": "四足行走跳跃与姿态控制",
+      "canonical_evidence": "四足行走跳跃与姿态控制",
+      "llm_tldr_en": "Presents RL policies for dynamic quadrupedal locomotion in Martian gravity, including walking, jumping, and in-flight attitude control, with sim-to-real transfer for attitude control.",
+      "llm_tldr_cn": "针对火星低重力环境，为优化设计的四足机器人开发了强化学习策略，实现行走、垂直跳跃、前跳和空中姿态控制。这些策略使机器人能跨越大于自身的障碍。在仿真中验证了所有运动策略，并将姿态控制策略成功迁移到物理机器人上，展示了在低重力下进行复杂运动的可行性。",
+      "llm_tldr": "针对火星低重力环境，为优化设计的四足机器人开发了强化学习策略，实现行走、垂直跳跃、前跳和空中姿态控制。这些策略使机器人能跨越大于自身的障碍。在仿真中验证了所有运动策略，并将姿态控制策略成功迁移到物理机器人上，展示了在低重力下进行复杂运动的可行性。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "locomotion",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.25672v1",
+      "source": "arxiv",
+      "title": "Compliant Non-Prehensile Pushing Manipulation",
+      "abstract": "In this paper, we address the challenge of performing non-prehensile pushing operations with a compliant robotic manipulation system. To ensure safe operations in human-populated environments, robots must comply with external physical interactions and exhibit passive behavior. To achieve this, we extend a state-of-the-art pushing model to integrate it with impedance-controlled robots. We develop a model predictive control framework built upon this model that enables compliant pushing through optimal modulation of the robot's position/velocity set-point, jointly realizing the required pushing force and contact point adaptation to obtain desired object motion. However, external interactions may induce tracking errors, causing a consequent potentially indefinite increase of the pushing force. To prevent this, we integrate an energy tank passivity filter that further modulates the robot velocity set-point to guarantee passivity and avoid uncontrolled energy buildup. The proposed method has been rigorously tested in simulation and validated through experiments on two different robotic systems, demonstrating passive compliance during human-robot interactions and assessing trajectory tracking performance and robustness to variations in the object's physical parameters.",
+      "authors": [
+        "Francesco Cufino",
+        "Mario Selvaggio",
+        "Fabio Amadio",
+        "Fabio Ruggiero"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-25T10:24:05+00:00",
+      "link": "https://arxiv.org/pdf/2605.25672v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "compliant pushing manipulation",
+      "llm_evidence_cn": "柔顺推动操作",
+      "llm_evidence": "柔顺推动操作",
+      "canonical_evidence": "柔顺推动操作",
+      "llm_tldr_en": "Proposes a model predictive control framework for compliant non-prehensile pushing, integrating impedance control to ensure safe human-robot interaction.",
+      "llm_tldr_cn": "针对人机共融环境中安全操作的需求，提出一种基于阻抗控制的柔顺非夹取推动方法。通过模型预测控制框架优化位置/速度设定点，同时实现所需推力和接触点自适应。实验表明该方法能有效应对外部干扰，实现稳定的物体推动。",
+      "llm_tldr": "针对人机共融环境中安全操作的需求，提出一种基于阻抗控制的柔顺非夹取推动方法。通过模型预测控制框架优化位置/速度设定点，同时实现所需推力和接触点自适应。实验表明该方法能有效应对外部干扰，实现稳定的物体推动。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "manipulation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.25829v1",
+      "source": "arxiv",
+      "title": "OASIS: Observation-Action Space Alignment via SE(3) Trajectory Prediction for Robotic Manipulation",
+      "abstract": "Recent vision-language-action (VLA) models and world action models (WAMs) advance robotic manipulation by enriching intermediate representations with auxiliary spatial features or future visual-state prediction. However, these representations largely remain within the observation space and do not share the rigid-body geometry of the action space, forcing the action decoder to implicitly recover this geometry. We propose OASIS, a visuomotor policy that aligns the intermediate representation with the action space via $SE(3)$ end-effector trajectory prediction. OASIS couples a 3D-aware feature encoder that fuses vision-language and metric-depth features with an $SE(3)$ trajectory predictor that produces a camera-frame end-effector trajectory. Conditioned on the predictor's pose-supervised hidden states, the action decoder generates action chunks consistent with rigid-body motion. Across simulation and real-world experiments, OASIS outperforms VLA and WAM baselines in success rate and out-of-distribution generalization. Our project page is available at https://npuhandsome.github.io/OASIS_web.",
+      "authors": [
+        "Xinzhe Chen",
+        "Sihua Ren",
+        "Liqi Huang",
+        "Haowen Sun",
+        "Mingyang Li",
+        "Xingyu Chen",
+        "Zeyang Liu",
+        "Xuguang Lan"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "published": "2026-05-25T13:28:33+00:00",
+      "link": "https://arxiv.org/pdf/2605.25829v1",
+      "tags": [
+        "keyword:robotics",
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "SE(3) trajectory prediction for observation-action alignment in manipulation",
+      "llm_evidence_cn": "通过SE(3)轨迹预测对齐观测与动作空间，用于操作",
+      "llm_evidence": "通过SE(3)轨迹预测对齐观测与动作空间，用于操作",
+      "canonical_evidence": "通过SE(3)轨迹预测对齐观测与动作空间，用于操作",
+      "llm_tldr_en": "OASIS aligns intermediate representation with action space via SE(3) end-effector trajectory prediction, coupling 3D-aware features with trajectory predictor to improve manipulation.",
+      "llm_tldr_cn": "现有VLA和世界动作模型的中间表示停留在观测空间，未共享动作空间的刚体几何。本文提出OASIS，通过SE(3)末端执行器轨迹预测将中间表示与动作空间对齐，融合3D特征与轨迹预测器。实验证明OASIS在多个操作基准上提升了动作精度与泛化能力。",
+      "llm_tldr": "现有VLA和世界动作模型的中间表示停留在观测空间，未共享动作空间的刚体几何。本文提出OASIS，通过SE(3)末端执行器轨迹预测将中间表示与动作空间对齐，融合3D特征与轨迹预测器。实验证明OASIS在多个操作基准上提升了动作精度与泛化能力。",
+      "llm_tags": [
+        "query:robotics:composite"
+      ],
+      "matched_query_tag": "query:robotics:composite",
+      "matched_query_text": "Papers central to 请帮我查找关于具身智能、机器人控制、导航以及结合了世界模型（World Models）进行轨迹预测或决策的相关论文。, especially work that connects or combines: v; manipulation; locomotion.",
+      "matched_requirement_id": "req-composite-robotics",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.26638v1",
+      "source": "arxiv",
+      "title": "HyperSim: A Holistic Sim-To-Real Framework For Robust Robotic Manipulation",
+      "abstract": "Scaling data volume and diversity is critical for generalizing embodied intelligence. While synthetic data generation offers a scalable alternative to expensive physical data acquisition, transferring robotic manipulation policies from simulation to the real world (sim-to-real) remains a formidable challenge due to the domain gap. This paper presents HyperSim, a holistic framework spanning from synthetic data generation to policy training and seamless real-world deployment. To systematically bridge the sim-to-real gap, HyperSim is realized through three core pillars: high-fidelity environment synthesis, adversarial trajectory generation, and sim-and-real co-training. Collectively, these modules address domain discrepancies by enhancing visual fidelity, expanding data coverage, and enforcing domain-invariant representations. We rigorously validate HyperSim through a large-scale empirical study involving 400 real-world task executions across two representative manipulation models. Assessed across three fine-grained metrics, our complete pipeline achieves remarkable sim-to-real success rates of 80% and 95% with ACT and π_{0}, respectively. Furthermore, policies trained on our adversarial trajectories exhibit significantly enhanced robustness against dynamic uncertainties, achieving a 35% higher completion rate under physical perturbations.",
+      "authors": [
+        "Junyi Dong",
+        "Haotian Luo",
+        "Ziwei Xu",
+        "Shengwei Bian",
+        "Heng Zhang",
+        "Sitong Mao",
+        "Jingyi Guo",
+        "Yang Xu",
+        "Wenhao Chen",
+        "Qiuyu Feng",
+        "Yao Mu",
+        "Ping Luo",
+        "Shunbo Zhou",
+        "Xiaodong Wu"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-26T07:19:04+00:00",
+      "link": "https://arxiv.org/pdf/2605.26638v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "holistic sim-to-real framework for robust robotic manipulation",
+      "llm_evidence_cn": "面向鲁棒机器人操纵的整体模拟到现实框架",
+      "llm_evidence": "面向鲁棒机器人操纵的整体模拟到现实框架",
+      "canonical_evidence": "面向鲁棒机器人操纵的整体模拟到现实框架",
+      "llm_tldr_en": "HyperSim provides a comprehensive sim-to-real framework for manipulation, combining high-fidelity synthesis, adversarial trajectory generation, and sim-and-real co-training.",
+      "llm_tldr_cn": "针对机器人操纵中模拟到现实迁移的域差问题，本文提出HyperSim整体框架。该框架包含高保真环境合成、对抗轨迹生成和模拟-真实联合训练三大支柱，系统性地桥接域差异。通过增强视觉保真度和生成挑战性轨迹，并混合模拟与真实数据进行训练，显著提升了策略在真实世界部署的鲁棒性。实验表明HyperSim有效缩小了模拟与现实的距离，为操纵策略的泛化提供了可扩展方案。",
+      "llm_tldr": "针对机器人操纵中模拟到现实迁移的域差问题，本文提出HyperSim整体框架。该框架包含高保真环境合成、对抗轨迹生成和模拟-真实联合训练三大支柱，系统性地桥接域差异。通过增强视觉保真度和生成挑战性轨迹，并混合模拟与真实数据进行训练，显著提升了策略在真实世界部署的鲁棒性。实验表明HyperSim有效缩小了模拟与现实的距离，为操纵策略的泛化提供了可扩展方案。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "manipulation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.27491v1",
+      "source": "arxiv",
+      "title": "GE-Sim 2.0: A Roadmap Towards Comprehensive Closed-loop Video World Simulators for Robotic Manipulation",
+      "abstract": "We introduce GE-Sim 2.0 (Genie Envisioner World Simulator 2.0), a closed-loop video world simulator for robotic manipulation. Building on the action-conditioned video generation framework of Genie Envisioner, GE-Sim 2.0 is re-trained on thousands of hours of real-world robot data spanning teleoperation, contact-rich interaction, and on-robot policy deployment, substantially improving action-following fidelity and trajectory coverage. On top of this foundation, three new modules close the loop from video simulation to policy learning: a state expert that decodes proprioceptive state from video latents to support next-chunk prediction by downstream VLA policies; a world judge that scores generated rollouts against task instructions, yielding machine-verifiable success signals and rewards in place of manual inspection; and an acceleration framework that delivers a 25-frame rollout in 2.3 seconds on a single H100, with up to 4* frame skipping at inference for long-horizon evaluation. GE-Sim 2.0 tops the public WorldArena leaderboard at only 2B parameters, outperforming both dedicated robotic world models and closed-source general video generators, and policies trained against its rollouts and rewards translate into measurable real-world gains, establishing GE-Sim 2.0 as a practical platform for scalable evaluation and closed-loop learning of manipulation policies.",
+      "authors": [
+        "Boxiang Qiu",
+        "Liliang Chen",
+        "Yue Liao",
+        "Nan Wang",
+        "Lintao Wang",
+        "Jiayi Luo",
+        "Wenzhi Zhao",
+        "Shengcong Chen",
+        "Di Chen",
+        "Ye Li",
+        "Chen Gao",
+        "Shuicheng Yan",
+        "Si Liu",
+        "Maoqing Yao",
+        "Guanghui Ren"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-26T16:23:05+00:00",
+      "link": "https://arxiv.org/pdf/2605.27491v1",
+      "tags": [
+        "keyword:robotics",
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "closed-loop video world simulator for robotic manipulation and trajectory prediction",
+      "llm_evidence_cn": "面向机器人操纵的闭环视频世界模拟器，支持轨迹预测",
+      "llm_evidence": "面向机器人操纵的闭环视频世界模拟器，支持轨迹预测",
+      "canonical_evidence": "面向机器人操纵的闭环视频世界模拟器，支持轨迹预测",
+      "llm_tldr_en": "GE-Sim 2.0 is a closed-loop video world simulator for robotic manipulation, enabling trajectory prediction and policy learning via state expert and world judge modules.",
+      "llm_tldr_cn": "针对机器人操纵中数据生成和策略评估的挑战，本文提出GE-Sim 2.0，一个闭环视频世界模拟器。该模拟器基于动作条件视频生成框架，在数千小时真实机器人数据上重新训练，显著提升了动作跟随保真度和轨迹覆盖。新增的状态专家模块从视频隐码解码本体感状态以支持下游VLA策略，世界法官模块对生成的轨迹进行评分。该系统实现了从视频模拟到策略学习的完整闭环，为机器人操纵的决策和轨迹预测提供了强大的工具。",
+      "llm_tldr": "针对机器人操纵中数据生成和策略评估的挑战，本文提出GE-Sim 2.0，一个闭环视频世界模拟器。该模拟器基于动作条件视频生成框架，在数千小时真实机器人数据上重新训练，显著提升了动作跟随保真度和轨迹覆盖。新增的状态专家模块从视频隐码解码本体感状态以支持下游VLA策略，世界法官模块对生成的轨迹进行评分。该系统实现了从视频模拟到策略学习的完整闭环，为机器人操纵的决策和轨迹预测提供了强大的工具。",
+      "llm_tags": [
+        "query:robotics:composite"
+      ],
+      "matched_query_tag": "query:robotics:composite",
+      "matched_query_text": "Papers central to 请帮我查找关于具身智能、机器人控制、导航以及结合了世界模型（World Models）进行轨迹预测或决策的相关论文。, especially work that connects or combines: v; manipulation; locomotion.",
+      "matched_requirement_id": "req-composite-robotics",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.27909v1",
+      "source": "arxiv",
+      "title": "S-Cheetah: A Novel Quadrupedal Robot with a 3-DOF Active Spine Learning Agile Locomotion",
+      "abstract": "The biological spine of quadrupeds enables sagittal flexion/extension, lateral bending, and axial rotation, playing a crucial role in highly agile and dexterous locomotion. While numerous studies have integrated active spinal joints into quadrupedal robots to enhance agility, most designs simplify control complexity by reducing spinal degrees of freedom (DOF), failing to achieve the spatial tri-axial rotation characteristic of biological spines. Consequently, replicating a multi-DOF biomimetic spine and effectively leveraging it to empower the agile locomotion of quadrupedal robots remains a significant research challenge. In this study, we present S-Cheetah, a quadrupedal robot featuring a 3-DOF bio-inspired serial active spine capable of biomimetic spatial tri-axial rotation. To empower the robot to fully utilize this active spine, we developed a specialized reinforcement learning framework to actively promote the engagement of the introduced spine and maximize the robot's locomotive capabilities by integrating an acceleration curriculum learning strategy with tailored reward functions, such as a gallop gait reward, a spine undulation reward, and a spine steering reward. Experimental results demonstrate that S-Cheetah can achieve a peak speed of 6.9 m/s using the rotary G2 gallop gait and an in-place turning rate of 7.2 rad/s. Besides, the system exhibits an emergent, feline-inspired aerial self-righting capability, allowing it to land stably on four feet from arbitrary orientations during free fall. Finally, through extensive evaluations across diverse locomotion tasks, we prove that the introduction of the proposed 3-DOF spine comprehensively enhances the locomotive agility of quadrupedal robots. Project website: himmy-robotics.github.io/scheetah",
+      "authors": [
+        "Zimu Li",
+        "Weibang Bai"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-27T03:34:16+00:00",
+      "link": "https://arxiv.org/pdf/2605.27909v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "quadruped robot with active spine for agile locomotion",
+      "llm_evidence_cn": "具有主动脊柱的四足机器人实现敏捷运动",
+      "llm_evidence": "具有主动脊柱的四足机器人实现敏捷运动",
+      "canonical_evidence": "具有主动脊柱的四足机器人实现敏捷运动",
+      "llm_tldr_en": "S-Cheetah is a quadrupedal robot with a 3-DOF bio-inspired active spine that enables agile locomotion, achieving spatial tri-axial rotation similar to biological spines.",
+      "llm_tldr_cn": "四足机器人脊柱自由度不足限制了敏捷运动。本文提出S-Cheetah，搭载3自由度仿生串联主动脊柱，实现空间三轴旋转。通过强化学习训练，该机器人在多种敏捷运动任务上表现卓越，验证了多自由度脊柱对提升运动能力的关键作用。",
+      "llm_tldr": "四足机器人脊柱自由度不足限制了敏捷运动。本文提出S-Cheetah，搭载3自由度仿生串联主动脊柱，实现空间三轴旋转。通过强化学习训练，该机器人在多种敏捷运动任务上表现卓越，验证了多自由度脊柱对提升运动能力的关键作用。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "locomotion",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.28231v1",
+      "source": "arxiv",
+      "title": "ProgVLA: Progress-Aware Robot Manipulation Skill Learning",
+      "abstract": "We present ProgVLA, a compact vision-language-action (VLA) model designed for reliable robot manipulation under tight compute and memory budgets. The model specifically focuses on efficiently processing long multi-modal sequences by maintaining an explicit representation of task progress over extended horizons. To this end, ProgVLA integrates two key components. First, a multi-modal encoder with a two-stage Perceiver resampling scheme compresses variable-length visual, language, and proprioceptive streams into a fixed set of control-ready context tokens, substantially reducing sequence length while preserving cross-modal grounding. Second, an auxiliary set of progress heads is trained with offline reinforcement learning (RL) objectives to jointly learn critics over normalized remaining-horizon targets. This provides the policy with an internal estimate of task progress and enables advantage- and success-weighted flow-matching imitation learning. On two well-established multi-task robot manipulation benchmarks, a 0.1B-parameter ProgVLA model reaches success rates that are competitive with, and on long-horizon and harder task tiers exceed, substantially larger pretrained baselines. Ablations indicate that the learned context resampler and task-adaptive visual fine-tuning are the largest single contributors, while progress-aware training provides a consistent additional gain that is concentrated on long-horizon and multi-object tasks. We further validate the approach in real-world toy-kitchen environments.",
+      "authors": [
+        "Seungsu Kim",
+        "Jinyoung Choi",
+        "Seungmin Baek",
+        "Jean-Michel Renders"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "published": "2026-05-27T09:44:46+00:00",
+      "link": "https://arxiv.org/pdf/2605.28231v1",
+      "tags": [
+        "keyword:robotics",
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "robot manipulation skill learning with progress awareness",
+      "llm_evidence_cn": "具有进度感知的机器人操作技能学习",
+      "llm_evidence": "具有进度感知的机器人操作技能学习",
+      "canonical_evidence": "具有进度感知的机器人操作技能学习",
+      "llm_tldr_en": "ProgVLA is a compact vision-language-action model for robot manipulation that efficiently processes long sequences and maintains explicit task progress, using a two-stage Perceiver and offline RL critics.",
+      "llm_tldr_cn": "长序列多模态处理是紧凑VLA模型的挑战。本文提出ProgVLA，集成两阶段感知器重采样方案压缩多模态流，并引入进度头通过离线RL学习评论者。该方法在有限计算和内存预算下实现可靠的长时间操作，展示了进度表示对操作技能的关键作用。",
+      "llm_tldr": "长序列多模态处理是紧凑VLA模型的挑战。本文提出ProgVLA，集成两阶段感知器重采样方案压缩多模态流，并引入进度头通过离线RL学习评论者。该方法在有限计算和内存预算下实现可靠的长时间操作，展示了进度表示对操作技能的关键作用。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "manipulation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.28486v1",
+      "source": "arxiv",
+      "title": "Mag-VLA: Vision-Language-Action Model for Bimanual Magnetically Actuated Microrobot Manipulation",
+      "abstract": "Magnetically actuated microrobots have been used as wireless, non-contact manipulation tools at microscales, making them promising for minimally invasive applications. However, their control remains challenging due to indirect actuation, limited sensing, and nonlinear magnetic interactions. In this work, we propose Mag-VLA, a vision-language-action (VLA) model for dexterous magnetic microrobot manipulation using two robotic arms with mounted magnets for dynamic magnetic-field construction. Bimanual coordination enables capabilities such as microrobot reorientation that are difficult or infeasible with a single arm, but it also introduces coupled control challenges, as the policy must generate coordinated trajectories for both actuators within a shared workspace. Our framework adapts a Qwen2.5-VL-7B backbone using Low-Rank Adaptation (LoRA) to process visual observations and language instructions for action prediction. To capture task progression, we introduce a motion-aware phase classifier and a phase-conditioned Action Chunking Transformer (ACT) decoder for temporally coherent multi-step control. We further construct a teleoperated magnetic microrobot manipulation dataset covering three task configurations. Ablation studies show that the ACT-based decoder substantially outperforms alternative generative action heads. In real-robot experiments, Mag-VLA achieves a 90% approach success rate across all tasks and transport success rates of 80%, 70%, and 50% as task difficulty increases. These results demonstrate that hierarchical VLA modeling provides a promising framework for magnetic microrobot manipulation.",
+      "authors": [
+        "Yongchen Wang",
+        "Kangyi Lu",
+        "Lan Wei",
+        "Dandan Zhang"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-27T13:44:00+00:00",
+      "link": "https://arxiv.org/pdf/2605.28486v1",
+      "tags": [
+        "keyword:robotics",
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "bimanual magnetic microrobot manipulation",
+      "llm_evidence_cn": "双臂磁驱动微机器人操作",
+      "llm_evidence": "双臂磁驱动微机器人操作",
+      "canonical_evidence": "双臂磁驱动微机器人操作",
+      "llm_tldr_en": "Proposes Mag-VLA, a VLA model for dexterous manipulation of magnetic microrobots using two robotic arms to dynamically control magnetic fields, enabling reorientation and coordinated trajectories.",
+      "llm_tldr_cn": "磁驱动微机器人在微尺度操作中具有非接触优势，但控制挑战大。本文提出Mag-VLA模型，利用两个机械臂协调构建动态磁场，实现微机器人的灵巧操作，包括重新定向。通过视觉-语言-动作联合学习生成双臂协调轨迹，在仿真中展示了优于单臂的操控能力。",
+      "llm_tldr": "磁驱动微机器人在微尺度操作中具有非接触优势，但控制挑战大。本文提出Mag-VLA模型，利用两个机械臂协调构建动态磁场，实现微机器人的灵巧操作，包括重新定向。通过视觉-语言-动作联合学习生成双臂协调轨迹，在仿真中展示了优于单臂的操控能力。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "manipulation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    },
+    {
+      "id": "2605.28812v1",
+      "source": "arxiv",
+      "title": "Beyond Binary: Sim-to-Real Dexterous Manipulation with Physics-Grounded Contact Representation",
+      "abstract": "A primary bottleneck in contact-rich manipulation is the difficulty of collecting real-world data. Sim-to-real reinforcement learning offers a scalable alternative, but the simulation-reality gap prevents information-dense modalities like touch from being effectively used. Existing sim-to-real methods often mitigate this gap by simplifying tactile data into coarse low-dimensional features -- sacrificing the richness required for complex manipulation. In this work, we introduce Center-of-Pressure (CoP), an effective tactile representation grounded in physical principles that preserves dense contact information while maintaining robustness for sim-to-real transfer. To support this representation, we propose a sensor calibration scheme based on differentiable dynamics, enabling the estimation of taxel orientations without requiring ground-truth force measurements. We evaluate CoP on two blind, challenging contact-rich manipulation tasks: peg-in-hole insertion and ball balancing. Across both tasks, policies conditioned on CoP achieve zero-shot sim-to-real transfer on a multi-fingered hand, and outperform both coarse binary-contact and raw-taxel baselines. Analysis of learned policy states further suggests that CoP-conditioned policies encode task-relevant physical properties, such as object mass, as an emergent byproduct of control.",
+      "authors": [
+        "Jiahe Pan",
+        "Stelian Coros",
+        "Jitendra Malik",
+        "Toru Lin"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-05-27T17:59:02+00:00",
+      "link": "https://arxiv.org/pdf/2605.28812v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 9.0,
+      "llm_evidence_en": "sim-to-real dexterous manipulation with physics-grounded tactile representation",
+      "llm_evidence_cn": "基于物理的触觉表示实现灵巧操纵的模拟到现实迁移",
+      "llm_evidence": "基于物理的触觉表示实现灵巧操纵的模拟到现实迁移",
+      "canonical_evidence": "基于物理的触觉表示实现灵巧操纵的模拟到现实迁移",
+      "llm_tldr_en": "Introduces Center-of-Pressure (CoP) tactile representation for sim-to-real dexterous manipulation, preserving dense contact info while being robust to domain gap, enabling effective RL transfer.",
+      "llm_tldr_cn": "针对接触丰富操纵中模拟到现实迁移困难的问题，本文提出一种基于物理原理的触觉表示——压力中心（CoP），该表示保留了密集接触信息且对域间差异鲁棒。通过传感器标定方案支持，CoP使得在模拟中训练的强化学习策略能有效迁移到真实灵巧操纵任务，克服了传统简化触觉特征信息损失的问题。实验证明该方法在复杂操纵任务中表现优异。",
+      "llm_tldr": "针对接触丰富操纵中模拟到现实迁移困难的问题，本文提出一种基于物理原理的触觉表示——压力中心（CoP），该表示保留了密集接触信息且对域间差异鲁棒。通过传感器标定方案支持，CoP使得在模拟中训练的强化学习策略能有效迁移到真实灵巧操纵任务，克服了传统简化触觉特征信息损失的问题。实验证明该方法在复杂操纵任务中表现优异。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "manipulation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch"
+    }
+  ],
+  "quick_skim": [
+    {
+      "id": "2605.19431v1",
+      "source": "arxiv",
+      "title": "Self-assembling Modular Aerial Robot for Versatile Aerial Tasks",
+      "abstract": "Multirotor aerial robots excel at maneuvering in three-dimensional space, and recent advances enable nimble navigation in cluttered and confined environments, especially for small airframes. By contrast, platforms built for high-altitude work tend to be larger to deliver high thrust for stable physical interaction with the environment. However, these conflicting design requirements create a long-standing trade-off between nimble navigation and robust aerial manipulation. Here, we present LEGION units, which are reconfigurable modular aerial robots capable of in-flight self-assembly for cooperative manipulation, drawing inspiration from the self-organized collectives formed by ants. Each unit retains nimble maneuverability while joint-equipped docking interfaces at both ends enable end-to-end self-assembly into a flying manipulator. We show that multiple units autonomously dock in flight; once latched, they maintain a zero-clearance interlock by controlling the contact force and torque, enabling reliable aggregation and articulated motion even outdoors. We further show that self-reconfigurability enables morphological switching between nimble individual flight and collective articulated manipulation, while realizing core in-flight manipulation primitives including pushing, pulling, rotating, grasping, and carrying. LEGION's self-organization enables aerial robots, especially in swarms, to shift from passive observers to active participants in their environment, broadening the scope of aerial physical interaction.",
+      "authors": [
+        "Junichiro Sugihara",
+        "Masaki Kitagawa",
+        "Jinjie Li",
+        "Yunong Li",
+        "Takuzumi Nishio",
+        "Kei Okada",
+        "Moju Zhao"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-19T06:36:10+00:00",
+      "link": "https://arxiv.org/pdf/2605.19431v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "in-flight self-assembly for cooperative manipulation",
+      "llm_evidence_cn": "飞行中自组装协同操作",
+      "llm_evidence": "飞行中自组装协同操作",
+      "canonical_evidence": "飞行中自组装协同操作",
+      "llm_tldr_en": "LEGION units are reconfigurable modular aerial robots that self-assemble in flight for cooperative manipulation, balancing nimble navigation and robust physical interaction. The system enables versatile aerial tasks.",
+      "llm_tldr_cn": "针对空中机器人在灵活导航与稳固操作之间的长期权衡，本文提出LEGION模块化空中机器人单元，可飞行中自组装形成协作操作平台。每个单元保持灵活机动性，通过关节式对接接口实现自组装。该系统在模拟和实物实验中展示了多种空中操作能力，为无人机操作提供了新范式。",
+      "llm_tldr": "针对空中机器人在灵活导航与稳固操作之间的长期权衡，本文提出LEGION模块化空中机器人单元，可飞行中自组装形成协作操作平台。每个单元保持灵活机动性，通过关节式对接接口实现自组装。该系统在模拟和实物实验中展示了多种空中操作能力，为无人机操作提供了新范式。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "manipulation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2605.19503v1",
+      "source": "arxiv",
+      "title": "ARC-RL: A Reinforcement Learning Playground Inspired by ARC Raiders",
+      "abstract": "Reinforcement learning for legged locomotion has matured into a stack of multi-component reward functions and physics-engine benchmarks whose morphologies are uniformly derived from real commercial hardware. Game NPCs, however, are bound by stylistic constraints absent from sim-to-real robotics and routinely take the form of creatures with no real-robot counterpart. We introduce ARC-RL, a suite of four MuJoCo continuous-control environments featuring robotic morphologies inspired by the bestiary of ARC Raiders: the 18-DoF tall hexapod Queen, the 12-DoF armoured hexapod Bastion, the 18-DoF compact hexapod Tick, and the 12-DoF quadruped Leaper. All four robots share a unified observation template, action convention, simulation cadence, and a single closed-form multi-component reward function whose only per-morphology variation lives in a small set of weights and parameters. The reward fuses a velocity-tracking tent, a healthy survive bonus, a phase-locked gait-compliance bonus/cost pair, action regularisers, three safety penalties, and a posture anchor; no motion-capture data enters the reward at any point. We additionally provide hand-crafted Central Pattern Generator demonstrators per morphology, which serve both as fixed expert references and as sources of prior data for offline-to-online training. On this playground, we conduct a controlled empirical study comparing standard online algorithms (SAC, SPEQ, SOPE-EO) and methods augmented with prior data (SACfD, SPEQ-O2O, SOPE), and characterise how each paradigm copes with the playground's morphological diversity and animation-style stylistic constraints.",
+      "authors": [
+        "Carlo Romeo",
+        "Andrew D. Bagdanov"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-05-19T07:54:40+00:00",
+      "link": "https://arxiv.org/pdf/2605.19503v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "RL environments for legged locomotion",
+      "llm_evidence_cn": "用于足式运动的强化学习环境",
+      "llm_evidence": "用于足式运动的强化学习环境",
+      "canonical_evidence": "用于足式运动的强化学习环境",
+      "llm_tldr_en": "ARC-RL introduces four MuJoCo continuous-control environments for legged locomotion with unique game-inspired morphologies, providing a unified testbed for RL research.",
+      "llm_tldr_cn": "现有足式运动基准多基于真实硬件形态，缺乏游戏风格机器人形态。本文提出ARC-RL，包含四个MuJoCo连续控制环境，形态源自ARC Raiders游戏生物：六足和四足机器人。所有环境共享统一的观察和动作模板，为强化学习研究提供多样化测试平台。",
+      "llm_tldr": "现有足式运动基准多基于真实硬件形态，缺乏游戏风格机器人形态。本文提出ARC-RL，包含四个MuJoCo连续控制环境，形态源自ARC Raiders游戏生物：六足和四足机器人。所有环境共享统一的观察和动作模板，为强化学习研究提供多样化测试平台。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "locomotion",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2605.20774v1",
+      "source": "arxiv",
+      "title": "VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models",
+      "abstract": "Vision-Language-Action (VLA) models have shown strong promise for general-purpose robotic manipulation, but their real-world evaluation remains limited by a lack of accessible, reproducible, and consistent benchmarks. Simulation benchmarks fail to capture real-world complexity, while existing real-world benchmarks often require expensive hardware, centralized evaluation, or are limited in task diversity. We introduce VLA-REPLICA, a low-cost, easily reproducible real-world benchmark for evaluating VLA models. Built from off-the-shelf components, our system can be quickly assembled and replicated across laboratories, providing a consistent environment for policy evaluation anywhere in the world. VLA-REPLICA includes a diverse suite of manipulation tasks and a small-scale demonstration dataset for target-domain adaptation, with real-world evaluation protocols for both in-distribution and out-of-distribution settings. Experiments with imitation learning and state-of-the-art VLA models reveal model strengths and limitations, while consistent results across independently constructed setups demonstrate the reproducibility of our benchmark.",
+      "authors": [
+        "Alex S. Huang",
+        "Jiahui Zhang",
+        "Shiqing Tang",
+        "Yu Xiang"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-20T06:15:30+00:00",
+      "link": "https://arxiv.org/pdf/2605.20774v1",
+      "tags": [
+        "keyword:robotics",
+        "query:robotics"
+      ],
+      "llm_score": 6.0,
+      "llm_evidence_en": "benchmark for VLA manipulation evaluation",
+      "llm_evidence_cn": "VLA操作评估基准",
+      "llm_evidence": "VLA操作评估基准",
+      "canonical_evidence": "VLA操作评估基准",
+      "llm_tldr_en": "Introduces a low-cost, reproducible real-world benchmark for standardized evaluation of VLA manipulation models.",
+      "llm_tldr_cn": "现有VLA模型评估缺乏可重复的真实世界基准。本文设计低成本、易复制的硬件平台和任务集，使不同实验室能在一致环境中评估操作策略，推动可比较的研究进展。",
+      "llm_tldr": "现有VLA模型评估缺乏可重复的真实世界基准。本文设计低成本、易复制的硬件平台和任务集，使不同实验室能在一致环境中评估操作策略，推动可比较的研究进展。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "manipulation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "6"
+    },
+    {
+      "id": "2605.19503v2",
+      "source": "arxiv",
+      "title": "ARC-RL: A Reinforcement Learning Playground Inspired by ARC Raiders",
+      "abstract": "Reinforcement learning for legged locomotion has matured into a stack of multi-component reward functions and physics-engine benchmarks whose morphologies are uniformly derived from real commercial hardware. Game NPCs, however, are bound by stylistic constraints absent from sim-to-real robotics and routinely take the form of creatures with no real-robot counterpart. We introduce ARC-RL, a suite of four MuJoCo continuous-control environments featuring robotic morphologies inspired by the bestiary of ARC Raiders: the 18-DoF tall hexapod Queen, the 12-DoF armoured hexapod Bastion, the 18-DoF compact hexapod Tick, and the 12-DoF quadruped Leaper. All four robots share a unified observation template, action convention, simulation cadence, and a single closed-form multi-component reward function whose only per-morphology variation lives in a small set of weights and parameters. The reward fuses a velocity-tracking tent, a healthy survive bonus, a phase-locked gait-compliance bonus/cost pair, action regularisers, three safety penalties, and a posture anchor; no motion-capture data enters the reward at any point. We additionally provide hand-crafted Central Pattern Generator demonstrators per morphology, which serve both as fixed expert references and as sources of prior data for offline-to-online training. On this playground, we conduct a controlled empirical study comparing standard online algorithms (SAC, SPEQ, SOPE-EO) and methods augmented with prior data (SACfD, SPEQ-O2O, SOPE), and characterise how each paradigm copes with the playground's morphological diversity and animation-style stylistic constraints. Source code is available at https://github.com/CarloRomeo427/ARC_RL.git.",
+      "authors": [
+        "Carlo Romeo",
+        "Andrew D. Bagdanov"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "published": "2026-05-19T07:54:40+00:00",
+      "link": "https://arxiv.org/pdf/2605.19503v2",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "legged locomotion reinforcement learning environments",
+      "llm_evidence_cn": "腿式运动强化学习环境",
+      "llm_evidence": "腿式运动强化学习环境",
+      "canonical_evidence": "腿式运动强化学习环境",
+      "llm_tldr_en": "Introduces ARC-RL, a suite of MuJoCo environments with novel legged morphologies (hexapods, quadruped) for RL locomotion research, providing unified observation and action templates.",
+      "llm_tldr_cn": "腿式运动强化学习基准多源于真实机器人形态，但游戏NPC有独特风格。本文提出ARC-RL套件，包含四种新型多足机器人（六足和四足）的MuJoCo连续控制环境，统一观测和动作接口。这些环境为研究创意形态的运动控制提供了标准测试平台。",
+      "llm_tldr": "腿式运动强化学习基准多源于真实机器人形态，但游戏NPC有独特风格。本文提出ARC-RL套件，包含四种新型多足机器人（六足和四足）的MuJoCo连续控制环境，统一观测和动作接口。这些环境为研究创意形态的运动控制提供了标准测试平台。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "locomotion",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2605.21935v1",
+      "source": "arxiv",
+      "title": "Learning to Evolve: Multi-modal Interactive Fields for Robust Humanoid Navigation in Dynamic Environments",
+      "abstract": "Safe manipulation-oriented navigation for humanoid robots requires scene memory that remains reliable under locomotion-induced perceptual distortion, environmental changes, and interaction-level geometric safety constraints. Existing semantic mapping and scene-graph systems are difficult to deploy directly in this setting because they often assume stable camera trajectories, static environments, or coarse object geometry. We introduce the Multi-modal Interactive Field (MIF), a humanoid-oriented system that integrates confidence-aware semantic 3D Gaussian Splatting, discrepancy-triggered spatial memory updates, and task-driven geometric reconstruction within a closed-loop perception-adaptation pipeline. MIF couples three fields: an uncertainty-aware 3DGS Appearance Field that suppresses gait-induced blur, a Spatial Field that maintains topological memory, and a Geometry Field that supports Interaction Pose Safety (IPS) before manipulation. A discrepancy detection score is introduced to separate locomotion-induced false-positive changes from persistent changes and updates only locally inconsistent regions. On a Unitree-G1 humanoid in a real dynamic office, MIF improves relocation success in non-static environments from 12% to 94% compared with static scene-graph memory, while reducing semantic memory footprint by 91.4% through feature distillation for practical online operation. Project page and code: https://ziya-jiang.github.io/MIF-homepage/",
+      "authors": [
+        "Peifeng Jiang",
+        "Hong Liu",
+        "Jin Jin",
+        "Wenshuai Wang",
+        "Xia Li"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-21T03:11:43+00:00",
+      "link": "https://arxiv.org/pdf/2605.21935v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "humanoid navigation with multi-modal perception",
+      "llm_evidence_cn": "人形机器人导航与多模态感知",
+      "llm_evidence": "人形机器人导航与多模态感知",
+      "canonical_evidence": "人形机器人导航与多模态感知",
+      "llm_tldr_en": "Integrates confidence-aware semantic 3D Gaussian Splatting and spatial memory for robust humanoid navigation in dynamic environments.",
+      "llm_tldr_cn": "人形机器人在动态环境中导航需要可靠场景记忆。提出多模态交互场，融合语义3D高斯泼溅、差异触发的空间记忆更新和任务驱动几何重建，实现闭环感知-适应导航。",
+      "llm_tldr": "人形机器人在动态环境中导航需要可靠场景记忆。提出多模态交互场，融合语义3D高斯泼溅、差异触发的空间记忆更新和任务驱动几何重建，实现闭环感知-适应导航。",
+      "llm_tags": [
+        "query:robotics:composite"
+      ],
+      "matched_query_tag": "query:robotics:composite",
+      "matched_query_text": "Papers central to 请帮我查找关于具身智能、机器人控制、导航以及结合了世界模型（World Models）进行轨迹预测或决策的相关论文。, especially work that connects or combines: v; manipulation; locomotion.",
+      "matched_requirement_id": "req-composite-robotics",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2605.19986v1",
+      "source": "arxiv",
+      "title": "Beyond Binary Success: A Diagnostic Meta-Evaluation Framework for Fine-Grained Manipulation",
+      "abstract": "Fine-grained manipulation marks a regime where global scene context no longer suffices, and success hinges on the tight coupling of local attribute grounding, high-fidelity spatial perception, and constraint-respecting motor execution. However, current embodied AI benchmarks collapse these capacities into binary success rates, systematically inflating reported capabilities by up to 70% and masking the architectural bottlenecks that impede real-world deployment. We introduce MetaFine, a diagnostic meta-evaluation framework that disentangles manipulation competency along three axes: understanding, perception, and controlled behavior. Built on a compositional task graph, MetaFine absorbs heterogeneous external benchmarks and reconstructs them into diagnostic scenarios of varying complexity under a unified protocol. Evaluating state-of-the-art vision-language-action (VLA) models through this lens exposes severe dimension-specific failures invisible to conventional metrics. Through targeted causal intervention, we identify the visual encoder's ability to preserve local spatial structure as a key bottleneck for fine-grained precision: improving it directly unlocks previously inaccessible manipulation capabilities without modifying downstream policies. MetaFine further supports hybrid real-sim validation, using limited paired real-world rollouts to calibrate scalable simulation-based estimates for more stable physical benchmarking. By shifting evaluation from ranking to diagnosis, MetaFine turns benchmarking into an actionable compass for repairing the layered capacities underlying genuine physical dexterity. The MetaFine framework, benchmarks, and supporting resources will be publicly released at our project page: https://metafine.github.io/.",
+      "authors": [
+        "He-Yang Xu",
+        "Pengyuan Zhang",
+        "Zongyuan Ge",
+        "Xiaoshuai Hao",
+        "Serge Belongie",
+        "Xin Geng",
+        "Yuxin Peng",
+        "Xiu-Shen Wei"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "published": "2026-05-19T15:25:13+00:00",
+      "link": "https://arxiv.org/pdf/2605.19986v1",
+      "tags": [
+        "keyword:robotics",
+        "query:robotics"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "fine-grained manipulation diagnostic framework",
+      "llm_evidence_cn": "细粒度操作诊断性元评估框架",
+      "llm_evidence": "细粒度操作诊断性元评估框架",
+      "canonical_evidence": "细粒度操作诊断性元评估框架",
+      "llm_tldr_en": "Introduces MetaFine, a meta-evaluation framework that disentangles manipulation competency along understanding, perception, and controlled behavior, revealing that binary success rates inflate capabilities.",
+      "llm_tldr_cn": "现有细粒度操作基准仅使用二元成功率评估，掩盖了各能力的真实瓶颈。本文提出MetaFine诊断性元评估框架，沿理解、感知和受控行为三个维度解构操作能力，能够吸收异构基准并分析架构瓶颈。实验表明传统评估会夸大真实能力，MetaFine提供了更细粒度的能力洞察。",
+      "llm_tldr": "现有细粒度操作基准仅使用二元成功率评估，掩盖了各能力的真实瓶颈。本文提出MetaFine诊断性元评估框架，沿理解、感知和受控行为三个维度解构操作能力，能够吸收异构基准并分析架构瓶颈。实验表明传统评估会夸大真实能力，MetaFine提供了更细粒度的能力洞察。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "manipulation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2605.22812v1",
+      "source": "arxiv",
+      "title": "GesVLA: Gesture-Aware Vision-Language-Action Model Embedded Representations",
+      "abstract": "Vision-Language-Action (VLA) models have shown strong potential for general-purpose robot manipulation by unifying perception and action. However, existing VLA systems primarily rely on textual instructions and struggle to resolve spatial ambiguity in complex scenes with multiple similar objects. To address this limitation, we introduce gesture as a parallel instruction modality and propose a Gesture-aware Vision-Language-Action model (GesVLA). Our approach encodes gesture features directly into the latent space, enabling them to participate in both high-level reasoning and low-level action generation, and adopts a dual-VLM architecture to achieve tight coupling between gesture representations and action policies. At the data level, we construct a scalable gesture data generation pipeline by rendering hand models onto real-world scene images. This reduces the sim-to-real visual gap while producing rich data with diverse motion patterns and corresponding pointing annotations. In addition, we employ a two-stage training strategy to equip the model with both gesture perception and action prediction capabilities. We evaluate our approach on multiple real-world robotic tasks, including a controlled block manipulation task for validation and more practical scenarios such as product and produce selection. Experimental results show that incorporating gesture consistently improves target grounding accuracy and human-robot interaction efficiency, especially in complex and cluttered environments. Project page: https://gwxuan.github.io/GesVLA/.",
+      "authors": [
+        "Wenxuan Guo",
+        "Ziyuan Li",
+        "Meng Zhang",
+        "Yichen Liu",
+        "Yimeng Dong",
+        "Chuxi Xu",
+        "Yunfei Wei",
+        "Ze Chen",
+        "Erjin Zhou",
+        "Jianjiang Feng"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "published": "2026-05-21T17:57:44+00:00",
+      "link": "https://arxiv.org/pdf/2605.22812v1",
+      "tags": [
+        "keyword:robotics",
+        "query:robotics"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "gesture-aware VLA for robotic manipulation",
+      "llm_evidence_cn": "手势感知的VLA机器人操作模型",
+      "llm_evidence": "手势感知的VLA机器人操作模型",
+      "canonical_evidence": "手势感知的VLA机器人操作模型",
+      "llm_tldr_en": "GesVLA integrates gesture as a parallel instruction modality into VLA latent space to resolve spatial ambiguity in complex scenes.",
+      "llm_tldr_cn": "现有VLA系统因仅依赖文本指令而在复杂场景中产生空间歧义。GesVLA将手势作为并行指令模态编码到潜空间，采用双VLM架构实现手势与动作策略的紧密耦合。实验表明手势输入有效提升了空间理解与操作准确性。",
+      "llm_tldr": "现有VLA系统因仅依赖文本指令而在复杂场景中产生空间歧义。GesVLA将手势作为并行指令模态编码到潜空间，采用双VLM架构实现手势与动作策略的紧密耦合。实验表明手势输入有效提升了空间理解与操作准确性。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "manipulation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2605.20304v1",
+      "source": "arxiv",
+      "title": "Terrestrial Soft Mobile Robots: A Review",
+      "abstract": "Soft mobile robots have emerged as a promising area of research with potential applications in various disciplines including but not limited to search-and-rescue, service, surveillance, explorations, and manufacturing. In this article, we provide a comprehensive review of the current state of soft mobile robot research, focusing on wheelless terrestrial locomotive systems. We include past and present developments in locomotion strategies, actuation methods, modeling approaches, and control systems. Further, we identify key research challenges that must be overcome to enable the widespread adoption of soft mobile robots in various applications. Overall, this article provides a valuable resource for researchers and practitioners interested in the field of soft mobile robots and soft robotics.",
+      "authors": [
+        "Dimuthu D. K. Arachchige"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-19T13:41:20+00:00",
+      "link": "https://arxiv.org/pdf/2605.20304v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "review of soft mobile robots locomotion",
+      "llm_evidence_cn": "软体移动机器人运动综述",
+      "llm_evidence": "软体移动机器人运动综述",
+      "canonical_evidence": "软体移动机器人运动综述",
+      "llm_tldr_en": "Comprehensive review of wheelless terrestrial soft mobile robots, covering locomotion strategies, actuation, modeling, and control, identifying key challenges for widespread adoption.",
+      "llm_tldr_cn": "综述了无轮式陆地软体移动机器人的研究现状，重点分析运动策略（如蠕动、跳跃等）、驱动方式、建模与控制方法。指出当前挑战包括材料耐久性、能源效率及环境适应性，为软体机器人运动领域提供系统性参考。",
+      "llm_tldr": "综述了无轮式陆地软体移动机器人的研究现状，重点分析运动策略（如蠕动、跳跃等）、驱动方式、建模与控制方法。指出当前挑战包括材料耐久性、能源效率及环境适应性，为软体机器人运动领域提供系统性参考。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "locomotion",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2605.23477v1",
+      "source": "arxiv",
+      "title": "Semantically Structured Mixture-of-Experts for Compositional Robotic Manipulation",
+      "abstract": "Diffusion-based policies have established a new standard for precise robotic manipulation but face a critical scalability bottleneck: high-performance models are computationally expensive, while lightweight alternatives often fail to generalize across diverse multi-task environments. Mixture-of-Experts (MoE) architectures offer a promising path to efficiency by activating only a subset of parameters. However, existing MoE routing mechanisms typically rely on low-level noise or latent statistics, ignoring the compositional nature of manipulation tasks. This can fragment reusable behaviors across experts, limiting interpretability and transferability. We introduce Semantically Structured Mixture-of-Experts Diffusion Policy (SMoDP) for compositional robotic manipulation, a framework that grounds expert specialization in semantic task structure. SMoDP leverages a lightweight, inference-time skill predictor, supervised by offline annotations from Vision-Language Models (VLMs), to route action chunks to experts specialized for specific behavioral phases. To ensure robust assignment, we propose a dual contrastive alignment strategy that grounds multi-modal observations in language-defined skill semantics (Inter-modal) while enforcing routing consistency across visually distinct but functionally related behaviors (Intra-modal). Our approach outperforms representative diffusion and MoE-based baselines on multi-task benchmarks with significantly improved parameter efficiency and demonstrates effective compositional transfer to novel tasks through parameter-efficient fine-tuning. Project website: https://deng-cy20.github.io/SMoDP/",
+      "authors": [
+        "Chengyu Deng",
+        "Guanqi Chen",
+        "Yizhou Chen",
+        "Zejia Liu",
+        "Zhiwen Ruan",
+        "Guanhua Chen",
+        "Jia Pan"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-22T10:38:59+00:00",
+      "link": "https://arxiv.org/pdf/2605.23477v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 7.0,
+      "llm_evidence_en": "semantically structured MoE for robotic manipulation",
+      "llm_evidence_cn": "语义结构化的混合专家模型用于机器人操作",
+      "llm_evidence": "语义结构化的混合专家模型用于机器人操作",
+      "canonical_evidence": "语义结构化的混合专家模型用于机器人操作",
+      "llm_tldr_en": "SMoDP uses semantically structured MoE routing to improve compositional robotic manipulation, enabling reusable behavior transfer.",
+      "llm_tldr_cn": "扩散策略在精确操作中表现优异但计算成本高。SMoDP利用语义结构化混合专家路由，根据任务组成激活相关专家，避免了通用跨任务泛化失败。实验证明该方法提升了操作任务的可解释性与迁移能力。",
+      "llm_tldr": "扩散策略在精确操作中表现优异但计算成本高。SMoDP利用语义结构化混合专家路由，根据任务组成激活相关专家，避免了通用跨任务泛化失败。实验证明该方法提升了操作任务的可解释性与迁移能力。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "manipulation",
+      "matched_requirement_id": "req-2",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "7"
+    },
+    {
+      "id": "2605.20373v1",
+      "source": "arxiv",
+      "title": "SUGAR: A Scalable Human-Video-Driven Generalizable Humanoid Loco-Manipulation Learning Framework",
+      "abstract": "Building humanoid robots capable of generalizable whole-body loco-manipulation in the real world remains a fundamental challenge. Existing methods either rely on laborious task-specific reward engineering, rigidly replay reference motions that fail to generalize, or depend on costly teleoperation that limits scalability. While human videos capture diverse human behaviors, motion priors inferred from them are inherently imperfect, suffering from occlusion, contact artifacts, and retargeting errors that render them unsuitable for direct policy learning. To address this, we present SUGAR, a scalable data-driven framework that converts diverse human videos into deployable humanoid loco-manipulation skills, without any task-specific reward engineering or reference-motion conditioning at inference. SUGAR proceeds in three stages. First, a fully automated pipeline extracts kinematic interaction priors including human-object motion trajectories and contact labels from unstructured human videos. Second, a privileged physics-based refiner uses a unified mimic reward and progressive state pool to transform imperfect priors into physically feasible, high-fidelity skills. Third, refined skills are distilled into a hierarchical autonomous policy consisting of a command generator and a command tracker. We evaluate SUGAR on six representative loco-manipulation tasks in simulation and real-world humanoid hardware. Our method substantially outperforms reference-tracking baselines, and performance scales clearly with the amount of human video data. It also achieves zero-shot real-world transfer with reliable closed-loop execution, autonomous failure recovery, and stable long-horizon performance under external perturbations. Project Page: https://tianshuwu.github.io/sugar-humanoid/",
+      "authors": [
+        "Tianshu Wu",
+        "Xiangqi Kong",
+        "Yue Chen",
+        "Qize Yu",
+        "Hang Ye",
+        "Jia Li",
+        "Yizhou Wang",
+        "Hao Dong"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "published": "2026-05-19T18:24:05+00:00",
+      "link": "https://arxiv.org/pdf/2605.20373v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "humanoid loco-manipulation from human videos",
+      "llm_evidence_cn": "从人类视频学习人形机人全身运动操作",
+      "llm_evidence": "从人类视频学习人形机人全身运动操作",
+      "canonical_evidence": "从人类视频学习人形机人全身运动操作",
+      "llm_tldr_en": "Scalable framework learning generalizable whole-body loco-manipulation from diverse human videos without task-specific engineering.",
+      "llm_tldr_cn": "现有方法依赖任务奖励工程或昂贵遥操作，难以扩展。SUGAR利用多样人类视频，通过可扩展数据驱动框架自动转化为可部署的人形机器人全身运动-操作技能，无需任务特定设计。",
+      "llm_tldr": "现有方法依赖任务奖励工程或昂贵遥操作，难以扩展。SUGAR利用多样人类视频，通过可扩展数据驱动框架自动转化为可部署的人形机器人全身运动-操作技能，无需任务特定设计。",
+      "llm_tags": [
+        "query:robotics:composite"
+      ],
+      "matched_query_tag": "query:robotics:composite",
+      "matched_query_text": "Papers central to 请帮我查找关于具身智能、机器人控制、导航以及结合了世界模型（World Models）进行轨迹预测或决策的相关论文。, especially work that connects or combines: v; manipulation; locomotion.",
+      "matched_requirement_id": "req-composite-robotics",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    },
+    {
+      "id": "2605.20932v1",
+      "source": "arxiv",
+      "title": "WiXus: A Wheeled-Legged Robot with Wire-Driven Environmental Utilizing to Integrate Mobility and Manipulation",
+      "abstract": "Wheeled-legged robots, which have wheels at their feet and achieve high mobility by coordinating wheel drive and leg drive, have been developed. These robots have been developed purely as platforms specialized for locomotion. Therefore, they do not have a means to repurpose their legs for roles other than locomotion, such as object manipulation or tool utilization. In this paper, we address the problem of how to draw out the potential task-execution capability of the legs by freeing them from the roles of locomotion through external body support. To this end, we propose and develop a new robot, WiXus, which fuses a wheeled-legged mechanism with a wire-driven mechanism that utilizes the external environment. The developed WiXus demonstrates not only planar locomotion with wheeled-legged drive, but also three-dimensional mobility such as cliff climbing by coordinating wire-driven and wheeled-legged actuation. Furthermore, by suspending the body with wire-driven actuation, WiXus successfully repurpose its legs as arms to perform object manipulation, (e.g., rescuing a dog (stuffed animal)), and tool utilization (e.g., harvesting an apple (mockup) with loppers). This study demonstrates that the approach of utilizing the environment with wire-driven actuation is a new design principle that extends the operational domain of wheeled-legged robots.",
+      "authors": [
+        "Shintaro Inoue",
+        "Kento Kawaharazuka",
+        "Temma Suzuki",
+        "Sota Yuzaki",
+        "Kei Okada"
+      ],
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "published": "2026-05-20T09:19:48+00:00",
+      "link": "https://arxiv.org/pdf/2605.20932v1",
+      "tags": [
+        "query:robotics"
+      ],
+      "llm_score": 8.0,
+      "llm_evidence_en": "wheeled-legged robot integrating mobility and manipulation via wire-driven mechanism",
+      "llm_evidence_cn": "轮腿机器人通过线驱动机制集成移动与操纵",
+      "llm_evidence": "轮腿机器人通过线驱动机制集成移动与操纵",
+      "canonical_evidence": "轮腿机器人通过线驱动机制集成移动与操纵",
+      "llm_tldr_en": "WiXus combines wheeled-legged locomotion with wire-driven environmental utilization to enable both mobility and manipulation using the same legs.",
+      "llm_tldr_cn": "传统轮腿机器人仅用于移动，不能执行操纵任务。本文提出WiXus机器人，将轮腿机构与线驱动环境利用相结合，通过外部身体支撑释放腿部潜力，使腿部既能用于移动也能用于物体操纵。这种设计增强了机器人的多功能性，实现了移动与操纵的有机融合，为足式机器人的任务执行能力提供了新思路。",
+      "llm_tldr": "传统轮腿机器人仅用于移动，不能执行操纵任务。本文提出WiXus机器人，将轮腿机构与线驱动环境利用相结合，通过外部身体支撑释放腿部潜力，使腿部既能用于移动也能用于物体操纵。这种设计增强了机器人的多功能性，实现了移动与操纵的有机融合，为足式机器人的任务执行能力提供了新思路。",
+      "llm_tags": [
+        "query:robotics"
+      ],
+      "matched_query_tag": "query:robotics",
+      "matched_query_text": "locomotion",
+      "matched_requirement_id": "req-3",
+      "selection_source": "fresh_fetch",
+      "quick_tier": "8plus"
+    }
+  ]
+}
